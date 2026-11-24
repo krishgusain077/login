@@ -1,0 +1,25 @@
+JOB ID: G3JvamPOllk2oJpcO3mz
+PROJECT: Responsive Login and Registration Forms — Harborline Workspace
+DEADLINE: 25 November 2026 | COMPENSATION: INR 706 | DURATION: 1 business day
+
+OBJECTIVE
+Replace the supplied legacy account interface with accessible login and registration views using semantic HTML5, modern CSS and vanilla ES6+ validation. This is a frontend validation preview, not a working account backend.
+
+INPUTS
+INPUT_FILES/BRAND_AND_DESIGN_GUIDE.md
+INPUT_FILES/DESIGN_REFERENCES/ (4 PNG and 4 SVG references)
+INPUT_FILES/BRAND_ASSETS/ (original logo and illustration in PNG/SVG)
+INPUT_FILES/LEGACY_FORMS/legacy_account.html
+INPUT_FILES/STARTER/ (openable but unfinished source)
+INPUT_FILES/TESTS/ACCEPTANCE_CASES.csv
+
+WORK STEPS
+1. Review the design references, guide, legacy form and starter. Prepare your own login/register wireframe or UI mockup for submission.
+2. Refine the HTML/CSS to closely match desktop and mobile references. Use semantic landmarks, accessible labels and responsive Flexbox/Grid.
+3. Implement login and registration validation in vanilla JavaScript with readable field errors, aria relationships, focus handling and a safe preview-success message.
+4. Ensure no credentials appear in URLs, console output, local storage or session storage. No server-side authentication is supplied or required.
+5. Check all 19 acceptance cases and test Chrome and Firefox at representative viewports. Record actual results, screenshots and any limitations.
+6. Publish the finished frontend to GitHub, deploy a static HTTPS preview and submit repository URL, deployment URL, documentation and evidence via one authorized Viewer-access Google Drive folder.
+
+ACCEPTANCE
+Both forms reject blank/malformed submissions, have clear accessible errors, and do not claim to authenticate or register a user. The design follows the supplied brand references, avoids horizontal overflow, and uses dependency-free ES6+ code.

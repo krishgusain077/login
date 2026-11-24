@@ -1,0 +1,10 @@
+FINAL SUBMISSION — ONE GOOGLE DRIVE FOLDER (Reviewer: Viewer)
+[ ] Login and Registration wireframe/mockup images (PNG/SVG/PDF)
+[ ] Source-code GitHub repository URL (include HTML, CSS, JS and assets; exclude secrets)
+[ ] Live HTTPS preview URL (Netlify, Vercel or equivalent static host)
+[ ] README.md: setup, modes, field validation, error conditions, accessibility and security limitations
+[ ] Completed ACCEPTANCE_CASES.csv with genuine outcomes
+[ ] Genuine login/register screenshots at 390px and desktop, plus relevant error states
+[ ] COMPLETION_NOTE.txt with repo URL, live URL, checks performed and remaining limitations
+
+Make the Drive folder accessible to the authorized reviewer with Viewer permission. Do not place real credentials in any submission. Frontend success is a validation-only confirmation, not authentication.

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="no-referrer">
+  <title>Harborline Workspace | Account access</title>
+  <link rel="icon" href="./assets/harborline_logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- validation.js must load before app.js -->
+  <script src="./validation.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to account form</a>
+
+  <!-- Desktop: left navy panel -->
+  <div class="auth-layout" id="main">
+    <aside class="brand-panel" aria-hidden="true">
+      <!-- Logo mark: mint tile + white wordmark -->
+      <div class="brand-logo">
+        <svg class="logo-tile" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <rect width="40" height="40" rx="8" fill="#087F8C"/>
+          <text x="20" y="28" text-anchor="middle" font-size="22" font-weight="800" fill="#fff" font-family="system-ui,Arial,sans-serif">H</text>
+        </svg>
+        <span class="brand-wordmark">Harborline</span>
+      </div>
+      <h1>Your work, in one calm place.</h1>
+      <p>A clear space for projects, files and ideas. Access your workspace from any device.</p>
+      <img src="./assets/workspace_art.png" alt="Illustration of a workspace dashboard" width="400" height="330">
+    </aside>
+
+    <!-- Right form panel -->
+    <section class="form-panel" aria-labelledby="form-title">
+
+      <!-- Mobile logo bar (hidden on desktop via CSS) -->
+      <div class="mobile-logo-bar">
+        <svg class="logo-tile" width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <rect width="40" height="40" rx="8" fill="#087F8C"/>
+          <text x="20" y="28" text-anchor="middle" font-size="22" font-weight="800" fill="#fff" font-family="system-ui,Arial,sans-serif">H</text>
+        </svg>
+        <span>Harborline</span>
+      </div>
+
+      <h2 id="form-title" tabindex="-1">Welcome back</h2>
+      <p id="form-description">Sign in to continue to your workspace.</p>
+
+      <noscript>
+        <p class="noscript-warning">JavaScript is required to use this form. Please enable it in your browser settings.</p>
+      </noscript>
+
+      <form id="account-form" novalidate method="post" autocomplete="on">
+
+        <!-- Name row (register only) -->
+        <div id="name-row" class="field" hidden>
+          <label for="full-name">Full name</label>
+          <input id="full-name" name="fullName" type="text"
+                 autocomplete="name" autocapitalize="words"
+                 placeholder="Your full name" disabled>
+          <p class="field-error" id="fullName-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"
+                 inputmode="email" autocomplete="email"
+                 autocapitalize="off" spellcheck="false"
+                 placeholder="name@example.com">
+          <p class="field-error" id="email-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Password -->
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password"
+                 autocomplete="current-password"
+                 placeholder="Enter your password">
+          <p class="field-error" id="password-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Confirm password (register only) -->
+        <div id="confirmation-row" class="field" hidden>
+          <label for="confirmation">Confirm password</label>
+          <input id="confirmation" name="confirmation" type="password"
+                 autocomplete="new-password"
+                 placeholder="Re-enter your password" disabled>
+          <p class="field-error" id="confirmation-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Consent (register only) -->
+        <div id="consent-row" class="consent" hidden>
+          <input id="consent" name="consent" type="checkbox" disabled>
+          <label for="consent">
+            I agree to the <a href="./terms.html">Terms</a> and <a href="./privacy.html">Privacy Policy</a>.
+          </label>
+          <p class="field-error" id="consent-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Status / success message -->
+        <div id="form-status" role="status" aria-live="polite"></div>
+
+        <button type="submit" class="primary-btn">Sign in</button>
+      </form>
+
+      <!-- Mode switch link (spec: text link under button) -->
+      <p class="mode-switch-wrap">
+        <span id="mode-switch-text">New here?</span>
+        <button type="button" id="login-tab" class="link-button" aria-pressed="true" hidden>Sign in</button>
+        <button type="button" id="register-tab" class="link-button" aria-pressed="false">Create an account</button>
+      </p>
+
+      <footer>Harborline Workspace · Account interface</footer>
+    </section>
+  </div>
+</body>
+</html>
